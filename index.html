@@ -3,24 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple HTML Page</title>
+    <title>Jeffrey Jones HTML Page</title>
+    <style>
+        /* Center the entire body content */
+        body {
+            width: 90%; /* Sets the width to 90% of the screen */
+            margin-left: auto; /* Centers the content by applying auto margins */
+            margin-right: auto; /* Centers the content by applying auto margins */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header section styling */
+        #header {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation section styling */
+        #nav {
+            background-color: #333; /* Dark grey background */
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Main content section styling */
+        #section {
+            background-color: #e7e7e7; /* Light grey background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #section h2 {
+            color: #0066cc;
+        }
+
+        /* Footer section styling */
+        footer {
+            background-color: #333; /* Dark grey background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Jeffrey's header</h1>
-    </header>
-    <p class="color-example">Testing class attribute.</p>
-    <ul class="list-example">
-        <li>Banana</li>
-        <li>Water</li>
-        <li>Protein</li>
-    </ul>
-    <p class="text-example">Today I woke up at about sevem in the morning.<br>Then I took a shower, ate breakfast and got ready for work.<br>I grabbed my backpack and walked to the train station.<br>After about 15 minute ride I made it to work.<br></p>
 
-    <div class="div-example">
-        Testing the div example "div-example".
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Jeffrey Jones Website</h1>
     </div>
 
+    <!-- Navigation Section -->
+    <div id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to index.html -->
+            <li><a href="second.html">Second Page</a></li> <!-- Link to second.html -->
+        </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="section">
+        <h2>Main content</h2>
+        <p>Hello, my name is Jeffrey Jones, and I am 33 years old. I am from Las Vegas, Nevada. My favorite hobbies include working out, playing sports, and cooking.</p>
+        <ul>
+            <li>Hobby 1: Working out</li>
+            <li>Hobby 2: Playing sports</li>
+            <li>Hobby 3: Cooking</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Jeffrey Jones 2024</p>
+    </footer>
 
 </body>
 </html>
