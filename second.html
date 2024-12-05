@@ -5,55 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeffrey Jones Second HTML Page</title>
     <style>
-        /* Background color for the entire page */
+        /* Center the entire body content */
         body {
-            background-color: #f0f8ff; /* Light blue background */
-            color: #333; /* Text color for readability */
+            width: 90%; /* Sets the width to 90% of the screen */
+            margin-left: auto; /* Centers the content by applying auto margins */
+            margin-right: auto; /* Centers the content by applying auto margins */
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
         }
 
-        /* Borders for headings */
+        /* Header section styling */
+        #header {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation section styling */
+        #nav {
+            background-color: #333; /* Dark grey background */
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Main content section styling */
+        #section {
+            background-color: #e7e7e7; /* Light grey background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #section h2 {
+            color: #0066cc;
+        }
+
+        /* Footer section styling */
+        footer {
+            background-color: #333; /* Dark grey background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Styling for headings */
         h1 {
-            border: 3px solid #444; /* Solid black border */
+            border: 3px solid #444;
             padding: 10px;
             margin: 20px;
-            background-color: #ffffff; /* White background for contrast */
+            background-color: #ffffff;
             text-align: center;
-            border-radius: 8px; /* Rounded corners */
+            border-radius: 8px;
         }
 
         h2 {
-            border-left: 5px solid #0066cc; /* Blue left border */
+            border-left: 5px solid #0066cc;
             padding: 10px 15px;
-            margin: 20px 40px; /* Adds indentation for visual hierarchy */
-            background-color: #e6f2ff; /* Light blue background for h2 */
+            margin: 20px 40px;
+            background-color: #e6f2ff;
             font-weight: bold;
         }
 
         /* Styling paragraphs */
         p {
-            background-color: #fff4e6; /* Soft peach background color */
-            border: 2px solid #ffcc99; /* Light orange border */
-            border-radius: 10px; /* Rounded corners */
-            padding: 15px; /* Internal spacing */
-            margin: 20px; /* External spacing */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            background-color: #fff4e6;
+            border: 2px solid #ffcc99;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             font-size: 16px;
-            line-height: 1.6; /* Improves readability */
+            line-height: 1.6;
         }
 
-        /* Container for layout alignment */
-        .container {
-            max-width: 800px; /* Restrict width for better readability */
-            margin: 0 auto; /* Center align content */
-            padding: 20px; /* Add space inside the container */
-            background-color: #ffffff; /* White background for contrast */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-
+        /* Styling links */
         .link-container {
             position: absolute;
             top: 10px;
@@ -71,6 +119,7 @@
             height: 30px;
         }
 
+        /* Styling for figure elements */
         figure {
             margin: 20px 0;
             text-align: center;
@@ -89,6 +138,7 @@
             color: gray;
         }
 
+        /* Progress section styling */
         .progress-section {
             margin: 20px;
         }
@@ -107,41 +157,43 @@
     </style>
 </head>
 <body>
-    <header>
+
+    <!-- Header Section -->
+    <div id="header">
         <h1>This is my second page welcome</h1>
-    </header>
+    </div>
 
-    <nav>
+    <!-- Navigation Section -->
+    <div id="nav">
         <ul>
-            <li><a href="#main-content">Go to main content</a></li>
-            <li><a href="#body">Body</a></li>
-            <li><a href="#footer">Footer</a></li>
+            <li><a href="index.html">Go to Home Page</a></li> <!-- Link to index.html -->
+            <li><a href="second.html">Go to Second Page</a></li> <!-- Link to second.html -->
         </ul>
-    </nav>
+    </div>
 
-    <main>
-        <h2>Main content</h2>
+    <!-- Main Content Section -->
+    <div id="section">
+        <h2>Main Content</h2>
         <p>My favorite foods to eat are soul food. These include black-eyed peas, rice, cornbread, collard greens, and fried fish. Especially now since these foods remind me of home.</p>
-    </main>
-
-    <a href="index.html">Go to Home Page</a>
-    <img src="me.jpg" alt="Home Icon">
+    </div>
 
     <!-- Image with figure and figcaption -->
     <figure>
-        <img src="food.jpg" alt="Soul food">
+        <img src="soulfood.jpg" alt="Soul food">
         <figcaption>Classic soul food dish of baked turkey wings, mac and cheese, and collard greens.</figcaption>
     </figure>
 
-    <!-- Progress section -->
+    <!-- Progress Section -->
     <div class="progress-section">
         <label for="course-progress">Course Progress:</label>
         <progress id="course-progress" value="70" max="100"></progress>
         <p>I am still a beginner, but slowly but surely I am getting the hang of this.</p>
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <p>Jeffrey Jones 2024</p>
     </footer>
+
 </body>
 </html>
