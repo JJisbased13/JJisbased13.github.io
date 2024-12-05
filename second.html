@@ -1,37 +1,11 @@
-
-    .color-example {
-        color: pink;                /* Set text color to pink */
-        background-color: blue;     /* Set background color to blue */
-        border: 1px solid black;    /* Set a thin black border */
-        padding: 10px;              /* Add some padding for better spacing */
-    }
-
-    .header-example {
-        font-size: 40px;               /* Set the font size */
-        font-family: 'Arial', sans-serif; /* Set the font family */
-        color: #4CAF50;                /* Set the text color (green) */
-    }
-
-    .list-example {
-        list-style-type: circle;    /* Change bullet points to circles */
-        color: green;               /* Set the text color to green */
-    }
-
-    .text-example {
-        font-family: 'Georgia', serif;   /* Change font family to Georgia */
-        font-size: 24px;                 /* Adjust font size to make the text larger */
-        text-transform: capitalize;      /* Capitalize the first letter of each word */
-        text-decoration: underline;      /* Underline the text */
-    }
-
-    .div-example {
-        background-color: red;  /* Set the background color to red */
-        padding: 20px;          /* Add padding inside the div */
-        border-radius: 8px;     /* Round the corners */
-        font-size: 18px;        /* Set the font size */
-        color: white;           /* Set the text color to white for better contrast */
-    }
-/* Background color for the entire page */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Jones Second HTML Page</title>
+    <style>
+        /* Background color for the entire page */
         body {
             background-color: #f0f8ff; /* Light blue background */
             color: #333; /* Text color for readability */
@@ -39,7 +13,8 @@
             margin: 0;
             padding: 0;
         }
-		  /* Borders for headings */
+
+        /* Borders for headings */
         h1 {
             border: 3px solid #444; /* Solid black border */
             padding: 10px;
@@ -56,7 +31,8 @@
             background-color: #e6f2ff; /* Light blue background for h2 */
             font-weight: bold;
         }
-		 /* Styling paragraphs */
+
+        /* Styling paragraphs */
         p {
             background-color: #fff4e6; /* Soft peach background color */
             border: 2px solid #ffcc99; /* Light orange border */
@@ -66,14 +42,6 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
             font-size: 16px;
             line-height: 1.6; /* Improves readability */
-        }
-		/* General body styling */
-        body {
-            background-color: #f0f8ff; /* Light blue background */
-            color: #333; /* Text color */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
         /* Container for layout alignment */
@@ -85,22 +53,25 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
+
         .link-container {
             position: absolute;
-            top: 10px; 
-            left: 10px; 
+            top: 10px;
+            left: 10px;
         }
 
         .link-container a {
-            text-decoration: none; 
-            color: blue; 
-            font-size: 16px; 
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
         }
-		 .link-container img {
-            width: 30px; 
-            height: 30px; 
+
+        .link-container img {
+            width: 30px;
+            height: 30px;
         }
-		figure {
+
+        figure {
             margin: 20px 0;
             text-align: center;
         }
@@ -117,7 +88,8 @@
             font-size: 14px;
             color: gray;
         }
-		 .progress-section {
+
+        .progress-section {
             margin: 20px;
         }
 
@@ -132,3 +104,44 @@
             height: 20px;
             margin-top: 5px;
         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my second page welcome</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#main-content">Go to main content</a></li>
+            <li><a href="#body">Body</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Main content</h2>
+        <p>My favorite foods to eat are soul food. These include black-eyed peas, rice, cornbread, collard greens, and fried fish. Especially now since these foods remind me of home.</p>
+    </main>
+
+    <a href="index.html">Go to Home Page</a>
+    <img src="me.jpg" alt="Home Icon">
+
+    <!-- Image with figure and figcaption -->
+    <figure>
+        <img src="food.jpg" alt="Soul food">
+        <figcaption>Classic soul food dish of baked turkey wings, mac and cheese, and collard greens.</figcaption>
+    </figure>
+
+    <!-- Progress section -->
+    <div class="progress-section">
+        <label for="course-progress">Course Progress:</label>
+        <progress id="course-progress" value="70" max="100"></progress>
+        <p>I am still a beginner, but slowly but surely I am getting the hang of this.</p>
+    </div>
+
+    <footer>
+        <p>Jeffrey Jones 2024</p>
+    </footer>
+</body>
+</html>
